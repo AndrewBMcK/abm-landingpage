@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #121212; /* Dark mode background color */
+    color: #ffffff; /* Light text color for dark mode */
+    font-size: 18px; /* Slightly increased base font size */
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.profile-photo {
+    width: 325px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.about {
+    margin: 20px;
+    max-width: 600px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1f1f; /* Dark button background */
+    border: 2px solid #0073b1; /* Border color */
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-size: 16px; /* Slightly increased button font size */
+}
+
+.links a:hover {
+    background-color: #0073b1; /* Hover color */
+    border-color: #005582; /* Hover border color */
+}
+
+.links a i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
+
+    .profile-photo {
+        width: 200px;
+    }
+
+    .about {
+        padding: 0 20px;
+    }
+
+    .links a {
+        width: 80%;
+        padding: 12px;
+        font-size: 18px; /* Larger button font size for easier tapping */
+    }
+}
+
+h2 {
+    color: #36b3f6; /* Updated color for h2 */
+}
